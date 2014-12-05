@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TalviMajatYlläs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            header h1{               
+                position: static;
+                display:block;
+                background-color: black;
+                color: white;
+                height: 80px;
+                margin: 10px 10px 1px 10px;
+                text-align:center; 
+                font-size: 40px;
+                padding: 30px 0px 0px 10px;
+                border-width: 10px;
+                border-color: red;
+            }
+            
+            #linkbar{
+                text-align: center;
+                max-height: 300;
+            }
+            #linkbar ul{
+                border-width: 10px;
+                border-color: black;
+                background-color: black;
+                height: 40px;
+                margin: 0px 10px 1px 10px;
+                padding: 15px 0px 0px 0px;
+            }
+            #linkbar ul li{
+                /* Positioning */
+                display: inline-block;
+                width: 120px;
+                padding: 0px 0px 0px 0px;
+                /* Colours */
+                background-color: white;
+                /* Border */
+                border: 1px solid;
+                border-color: grey;
+                border-radius: 15px;
+            }           
+            #linkbar ul li a:link{
+                color:black;
+                text-decoration:none;
+            }          
+            #linkbar ul li a:hover{
+                display:block;
+                border-radius: 15px;
+                background-color: red; 
+                text-decoration:none;
+            }
+            </style>
+
+        </head>
+        <body>
+            <div>
+                <header>
+                    <h1>Talvimajat Ylläs</h1>
+                </header>
+
+                <nav id = "linkbar">
+                    <ul>
+                        <li><a href="#">Pääsivu</a></li>
+                        <li><a href="#">RinnetalvelaA</a></li>
+                        <li><a href="#">RinnetalvelaB</a></li>
+                        <li><a href="#">talvelaA</a></li>
+                        <li><a href="#">Yhteystiedot</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </body>
+    </html>
