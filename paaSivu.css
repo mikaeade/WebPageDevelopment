@@ -60,7 +60,7 @@ and open the template in the editor.
                 display:block;
                 text-align:center; 
                 //alignment-adjust: central;
-                margin: auto auto auto 20%;
+                margin: auto auto auto 15%;
                 //margin-left: 100px; //täytyy säätää 
             }
             .mokit {

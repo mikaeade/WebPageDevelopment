@@ -7,14 +7,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            header h1{  
+            header h1{
                 position: static;
                 display:block;
                 background-color: black;
                 color: white;
                 height: 60px;
                 margin: 10px 10px 1px 10px;
-                text-align:center; 
+                text-align:center;
                 font-size: 40px;
                 padding: 10px 10px 0px 10px;
                 border-width: 10px;
@@ -39,13 +39,13 @@
                 border: 1px solid;
                 border-color: grey;
                 border-radius: 15px;
-            }           
+            }
             #linkbar ul li a:link{
                 display:block;
                 color:black;
                 text-decoration:none;
                 font-family: monospace;
-            }          
+            }
             #linkbar ul li a:hover{
                 display:block;
                 border: 1px solid;
@@ -55,25 +55,26 @@
                 color:white;
                 text-decoration:none;
             }
-            .rinnetalvelaAkuvat{       
+            .rinnetalvelaAkuvat{
                 display:block;
-                text-align:center; 
+                text-align:center;
+                max-width: 1000px;
                 //alignment-adjust: central;
-                margin: auto 10% auto 10%;
-                //margin-left: 100px; //täytyy säätää 
+                margin: auto 10px auto 10%;
+                //margin-left: 100px; //täytyy säätää
             }
             .mokit {
-                position:static;
+                //position:static;
                 display: inline-block;
                 border-radius: 15px;
                 background-color: snow;
                 float: left;
                 margin: 30px 5px 30px 5px;
-                padding: 5px;
+                padding: 3px;
                 max-width: 200px;
                 max-height: 400px;
                 border: 5px solid black;
-            } 
+            }
             .mokit:hover
             {
                 border: 5px solid gold;
@@ -84,28 +85,29 @@
             }
 
             .mokit:hover {
-                -webkit-transform: scale(2.0);
-                -moz-transform: scale(2.0);
-                -o-transform: scale(2.0);
-                transform: scale(2.5);
-                transition: all 0.7s;
-                -webkit-transition: all 0.7s;
+                -webkit-transform: scale(1.7);
+                -moz-transform: scale(1.7);
+                -o-transform: scale(1.7);
+                transform: scale(1.7);
+                transition: all 0.5s;
+                -webkit-transition: all 0.5s;
             }
 
-            .saatila{  
-                //clear: both;
-                width: 150px;
-                max-height: 400px;
-                float: left;
+            .varausKalenteri{
+                // position:absolute;¨
+                width: 200px;
+                font-size:12px;
+                min-height: 400px;
+                float:left;
                 display: inline-block;
                 background-color:lightgrey;
                 border-radius: 30px;
-                margin: 30px 5px 30px 5px;
+                margin: 30px 5px 30px 10%;
                 padding: 5px;
-                border: 5px solid silver;   
+                border: 5px solid silver;
             }
 
-            footer div{             
+            footer div{
                 display:block;
                 text-align: center;
                 padding: 10px 10px 10px 10px;
@@ -114,48 +116,97 @@
                 border: 5px solid black;
                 color:white;
                 background-color: black;
-            }   
+            }
+
+            .rinnetalvelaAteksti{          
+                display:inline-block;
+                border-radius: 30px;
+                margin: 5px 10% auto 10%;
+                text-align: center;
+                max-width: 900px;
+                padding: 10px 10px 10px 10px;
+                clear: both;
+                border: 5px solid black;
+                color:black;
+                background-color: white;
+            }        
         </style>
-
-
     </head>
 
     <body>
-        <div>        
+        <div>
             <header>
                 <h1> Rinnetalvela A</h1>
             </header>
-        </div> 
+        </div>
         <div>
             <nav id = "linkbar">
-                <ul> 
+                <ul>
                     <li><a href="index.html">Pääsivu</a></li>
                     <li><a href="rinneTalvelaA.html">RinneTalvelaA</a></li>
                     <li><a href="#">RinnetalvelaB</a></li>
                     <li><a href="#">Talvela</a></li>
-                    <li><a href="#">Vuokrausehdot</a></li>
-                    <li><a href="#">Yhteystiedot</a></li>
+                    <li><a href="varausehdot.html">Vuokrausehdot</a></li>
+                    <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
                 </ul>
             </nav>
         </div>
+        <div>
+            <div class="rinnetalvelaAteksti">
+                RinneTalvela A on vuonna 2006 valmistunut lämpöhirsinen, tunnelmallinen ja tasokas paritalomökki Iso-Ylläksen hiihtokeskuksen välittömässä läheisyydessä.
+                Mökkimme sijainti on ihanteellinen aktiiviselle lomailijalle. Koko Ylläksen latuverkosto on ulottuvillasi todella vaivattomasti, latu lähtee suoraan pihasta. Hiihtokeskukseenkin on vain noin 1km, voit laskea rinteiltä mökille! Kelkkareiteille matkaa 300m.
+
+                Huoneistossa on tilava tupa, upea takka ja täydellisesti varusteltu tupakeittiö. Tuvan ikkunasta on näkymä rinteille. Saunomisen yhteydessä voit vilvoitella takaterassilla ja samalla ihailla tunturimaisemaa.
+
+                Ei sallita lemmikkieläimiä. Hintaan ei sisälly loppusiivousta.
+            </div>
+            <aside>
+                <div class="varausKalenteri">
+                    RinneTalvela A<br>
+                    Pinta-ala: 100m2 (8 hengen mökki )<br>
+                    
+                    Alakerta <br>
+                    - 2*Makuuhuone <br>
+                    - Keittiö <br>
+                    - Olohuone <br>
+                    - Eteinen <br>
+                    - Pukuhuone <br>
+                    - WC <br>
+                    - Pesuhuone/WC <br>
+                    - Sauna <br>
+
+                    Parvi<br>
+                    - Erittäin tilavat 4 hengen makuutilat <br>
+
+                    Yleistä<br>
+                    - Erillinen suksienhuoltotila<br>
+                    - Puuvarasto<br>
+
+
+
+                    VarausKalenteri ja Kartta ja hinnasto
+                </div>
+
+            </aside>
+        </div>    
         <div class="rinnetalvelaAkuvat">
             <div class="mokit">
-                <a href="#"> <img src="RtA_ulkokuva.JPG" alt="HTML5 Icon" style="width:198px;height:168px"> </a>
+                <a href="#"> <img src="rtaTakka.jpg" alt="HTML5 Icon" style="width:188px;height:158px"> </a>
             </div>
             <div class="mokit">
-                <a href="#"> <img src="RtA_ulkokuva.JPG" alt="HTML5 Icon" style="width:198px;height:168px"> </a>
+                <a href="#"> <img src="rtaOlohuone.jpg" alt="HTML5 Icon" style="width:188px;height:158px"> </a>
             </div>
             <div class="mokit">
-                <a href="#"> <img src="RtA_ulkokuva.JPG" alt="HTML5 Icon" style="width:198px;height:168px"> </a>
+                <a href="#"> <img src="rtaSauna.jpg" alt="HTML5 Icon" style="width:188px;height:158px"> </a>
             </div>
             <div class="mokit">
-                <a href="#"> <img src="RtA_ulkokuva.JPG" alt="HTML5 Icon" style="width:198px;height:168px"> </a>
+                <a href="#"> <img src="rtaKeittio.jpg" alt="keittio" style="width:188px;height:158px"> </a>
             </div>
             <div class="mokit">
-                <a href="#"> <img src="RtA_ulkokuva.JPG" alt="HTML5 Icon" style="width:198px;height:168px"> </a>
+                <a href="#"> <img src="rtaMakuuhuone.jpg" alt="HTML5 Icon" style="width:188px;height:158px"> </a>
             </div>
             <div class="mokit">
-                <a href="#"> <img src="RtA_ulkokuva.JPG" alt="HTML5 Icon" style="width:198px;height:168px"> </a>
+                <a href="#"> <img src="rtaUlko.jpg" alt="HTML5 Icon" style="width:188px;height:158px"> </a>
             </div>
         </div>
         <footer>
@@ -163,7 +214,7 @@
                 YHTEYSTIEDOT:
                 sähköposti: talvimajatyllas@luukku.com
                 puhelin:+358 40 179 8032
-            </div>     
+            </div>
         </footer>
     </body>
 </html>
